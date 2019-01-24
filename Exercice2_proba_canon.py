@@ -9,8 +9,10 @@ Acercle = math.pi/4
 nbTir = 0
 
 for i in range(100000):
-    tir = np.random.random()
-    if tir <= Acercle :
+    x = np.random.random()
+    y = np.random.random()
+    norme = np.sqrt(x*x + y*y)
+    if norme <= Acarre :
         nbTir += 1
 
 print(nbTir/100000)
